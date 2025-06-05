@@ -5,7 +5,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/public"
+        "distDir": "dist"
       }
     }
   ],
@@ -15,4 +15,7 @@
       "destination": "/index.html"
     }
   ]
+}
+"scripts": {
+  "build": "react-scripts build"
 }
