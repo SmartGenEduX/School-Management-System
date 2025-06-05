@@ -2,11 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
   "rewrites": [
@@ -15,7 +12,4 @@
       "destination": "/index.html"
     }
   ]
-}
-"scripts": {
-  "build": "react-scripts build"
 }
